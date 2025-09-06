@@ -1,6 +1,6 @@
 package exercicio1oo.classes;
 
-class Livro {
+public class Livro {
     String titulo, autor, genero;
     boolean emprestado;
 }
