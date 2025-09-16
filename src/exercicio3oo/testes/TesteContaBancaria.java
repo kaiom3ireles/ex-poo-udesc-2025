@@ -6,17 +6,17 @@ public class TesteContaBancaria {
     public static void main(String[] args) {
         ContaBancaria cbx = new ContaBancaria();
 
-        cbx.numeroConta = "182546789271";
-        cbx.titular = "Homer Simpson";
-        cbx.saldo = -2000;
+        cbx.setNumeroConta("182546789271");
+        cbx.setTitular("Seu Madruga");
+        cbx.setSaldo(-2000);
 
-        System.out.println("Olá Homer! Dados da sua conta:");
-        System.out.println("Titular: " + cbx.titular);
-        System.out.println("Nº conta: "+cbx.numeroConta);
-        System.out.println("Saldo: "+cbx.saldo+" $$");
+        System.out.printf("Olá Seu Madruga! Dados da sua conta: \n");
+        System.out.printf("Titular: %s\n", cbx.getTitular());
+        System.out.printf("Nº conta: %s\n", cbx.getNumeroConta());
+        System.out.printf("Saldo: %.2f $$\n", cbx.getSaldo());
 
-        if (cbx.saldo < 0){
-            System.out.printf("Você está endividado %s !\n\n",cbx.titular);
+        if (cbx.getSaldo()< 0){
+            System.out.printf("Pague-me o aluguel %s !\n\n",cbx.getTitular());
         }
     }
 }
