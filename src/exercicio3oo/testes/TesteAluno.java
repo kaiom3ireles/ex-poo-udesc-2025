@@ -14,12 +14,12 @@ public class TesteAluno {
         kaio.setNota3(10);
         kaio.setNota4(9);
 
-        System.out.println("Matricula: ...." + kaio.getMatricula());
-        System.out.println("Nome: ...." + kaio.getNome());
-        System.out.println("Idade: ...." + kaio.getIdade());
-        System.out.println("Nota1: ...." + kaio.getNota1());
-        System.out.println("Nota2: ...." + kaio.getNota2());
-        System.out.println("Nota3: ...." + kaio.getNota3());
-        System.out.println("Nota4: ...." + kaio.getNota4());
+        System.out.printf("Matricula: .... %i\n", kaio.getMatricula());
+        System.out.printf("Nome: .... %s\n", kaio.getNome());
+        System.out.printf("Idade: .... %i\n", kaio.getIdade());
+        System.out.printf("Nota1: .... %i\n", kaio.getNota1());
+        System.out.printf("Nota2: .... %i\n", kaio.getNota2());
+        System.out.printf("Nota3: .... %i\n", kaio.getNota3());
+        System.out.printf("Nota4: .... %i\n", kaio.getNota4());
     }
 }
