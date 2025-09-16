@@ -4,9 +4,9 @@ import exercicio3oo.classes.Circulo;
 
 public class TesteCirculo {
     public static void main(String[] args) {
-        Circulo y=new Circulo();
-        y.raio= 9.5;
+        Circulo y = new Circulo();
+        y.setRaio(9.5);
 
-        System.out.println("O círculo indicado é de raio "+y.raio);
+        System.out.printf("O círculo indicado é de raio %.2f\n",y.getRaio());
     }
 }
