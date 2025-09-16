@@ -5,23 +5,23 @@ import exercicio3oo.classes.Livro;
 public class TesteLivro {
     public static void main(String[] args) {
         Livro livro1 = new Livro();
-        livro1.titulo = "Dom Quixote";
-        livro1.autor = "Miguel de Cervantes";
-        livro1.genero = "Romance";
-        livro1.emprestado = true;
+        livro1.setTitulo("Dom Quixote");
+        livro1.setAutor("Miguel de Cervantes");
+        livro1.setGenero("Romance");
+        livro1.setEmprestado(true);
 
-        System.out.println("Dados do livro: ");
-        System.out.println("Título: " + livro1.titulo);
-        System.out.println("Autor: " + livro1.autor);
-        System.out.println("Gênero: " + livro1.genero+"\n");
+        System.out.printf("Dados do livro: \n");
+        System.out.printf("Título: %s\n", livro1.getTitulo());
+        System.out.printf("Autor: %s\n", livro1.getAutor());
+        System.out.printf("Gênero: %s\n", livro1.getGenero());
 
-        if (livro1.emprestado == true)
+        if (livro1.isEmprestado() == true)
         {
-            System.out.println("Status: EMPRESTADO");
+            System.out.printf("Status: EMPRESTADO\n");
         }
         else
         {
-            System.out.println("Status: DISPONÍVEL");
+            System.out.printf("Status: DISPONÍVEL\n");
         }
     }
 }
