@@ -15,12 +15,9 @@ public class TesteLivro {
         System.out.printf("Autor: %s\n", livro1.getAutor());
         System.out.printf("Gênero: %s\n", livro1.getGenero());
 
-        if (livro1.isEmprestado() == true)
-        {
+        if (livro1.isEmprestado() == true) {
             System.out.printf("Status: EMPRESTADO\n");
-        }
-        else
-        {
+        } else {
             System.out.printf("Status: DISPONÍVEL\n");
         }
     }

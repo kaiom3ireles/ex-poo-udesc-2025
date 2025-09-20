@@ -7,6 +7,6 @@ public class TesteCirculo {
         Circulo y = new Circulo();
         y.setRaio(9.5);
 
-        System.out.printf("O círculo indicado é de raio %.2f\n",y.getRaio());
+        System.out.printf("O círculo indicado é de raio %.2f\n", y.getRaio());
     }
 }
