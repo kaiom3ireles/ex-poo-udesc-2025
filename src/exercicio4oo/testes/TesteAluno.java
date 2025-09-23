@@ -9,17 +9,22 @@ public class TesteAluno {
         kaio.setMatricula("123456789");
         kaio.setNome("Kaio Meireles");
         kaio.setIdade(21);
-        kaio.setNota1(8);
+        kaio.setNota1(7);
         kaio.setNota2(7);
-        kaio.setNota3(10);
-        kaio.setNota4(9);
+        kaio.setNota3(7);
+        kaio.setNota4(7);
 
-        System.out.printf("Matricula: .... %i\n", kaio.getMatricula());
+        System.out.printf("Matricula: .... %s\n", kaio.getMatricula());
         System.out.printf("Nome: .... %s\n", kaio.getNome());
-        System.out.printf("Idade: .... %i\n", kaio.getIdade());
-        System.out.printf("Nota1: .... %i\n", kaio.getNota1());
-        System.out.printf("Nota2: .... %i\n", kaio.getNota2());
-        System.out.printf("Nota3: .... %i\n", kaio.getNota3());
-        System.out.printf("Nota4: .... %i\n", kaio.getNota4());
+        System.out.printf("Idade: .... %d\n", kaio.getIdade());
+        System.out.printf("Nota1: .... %d\n", kaio.getNota1());
+        System.out.printf("Nota2: .... %d\n", kaio.getNota2());
+        System.out.printf("Nota3: .... %d\n", kaio.getNota3());
+        System.out.printf("Nota4: .... %d\n", kaio.getNota4());
+
+        System.out.println("Média final "+ kaio.calcularMedia());
+
+        kaio.imprimirSituacao();
+
     }
 }

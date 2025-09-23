@@ -5,6 +5,21 @@ public class Aluno {
     private String matricula, nome;
     private int idade, nota1, nota2, nota3, nota4;
 
+    //Funçao para calcular média de aluno
+
+    public void imprimirSituacao() {
+        if (this.calcularMedia() >= 7) {
+            System.out.printf("%s está APROVADO\n", this.nome);
+        } else {
+            System.out.printf("%s está REPROVADO\n", this.nome);
+        }
+    }
+
+    public double calcularMedia(){
+        double media = (nota1 + nota2 + nota3 + nota4) / 4.0;
+        return media;
+    }
+
     //MÉTODOS PÚBLICOS
     public void setMatricula(String matricula) { this.matricula = matricula; }
     public void setNome(String nome) { this.nome = nome; }
