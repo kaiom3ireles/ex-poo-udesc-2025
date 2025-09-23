@@ -11,5 +11,7 @@ public class TesteRetangulo {
         System.out.printf("Dados do retângulo: \n");
         System.out.printf("Largura: %.2f\n", x.getLargura());
         System.out.printf("Altura: %.2f\n", x.getAltura());
+
+        System.out.printf("Área de %.2f", x.calcularArea());
     }
 }
