@@ -4,6 +4,38 @@ public class Livro {
     private String titulo, autor, genero;
     private boolean emprestado;
 
+    public boolean emprestarLivro(boolean emprestar){
+        if (emprestar == true ){
+            this.emprestado = true;
+            System.out.println("Realizando novo empréstimo...");
+            System.out.println("Empréstimo realizado");
+        }
+        else{
+            this.emprestado = false;
+        }
+        return emprestar;
+    }
+    public boolean devolverLivro(boolean devolver){
+        if (devolver == true ){
+            this.emprestado = false;
+            System.out.println("Realizando nova devolução...");
+            System.out.println("Devolução realizada");
+        }
+        else{
+            this.emprestado = true;
+        }
+        return devolver;
+    }
+
+    public void verificar(){
+        System.out.println("Verificando situação atual\n........................");
+        if (emprestado == true ){
+            System.out.println("Livro indisponível");
+        }
+        else{
+            System.out.println("Livro disponível");
+        }
+    }
     public String getTitulo() {
         return titulo;
     }
