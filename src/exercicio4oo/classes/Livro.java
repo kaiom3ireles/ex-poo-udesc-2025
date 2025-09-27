@@ -4,7 +4,7 @@ public class Livro {
     private String titulo, autor, genero;
     private boolean emprestado;
 
-    public boolean emprestarLivro(boolean emprestar){
+    public void emprestarLivro(boolean emprestar){
         if (emprestar == true ){
             this.emprestado = true;
             System.out.println("Realizando novo empréstimo...");
@@ -13,9 +13,8 @@ public class Livro {
         else{
             this.emprestado = false;
         }
-        return emprestar;
     }
-    public boolean devolverLivro(boolean devolver){
+    public void devolverLivro(boolean devolver){
         if (devolver == true ){
             this.emprestado = false;
             System.out.println("Realizando nova devolução...");
@@ -24,7 +23,6 @@ public class Livro {
         else{
             this.emprestado = true;
         }
-        return devolver;
     }
 
     public void verificar(){
