@@ -14,5 +14,10 @@ public class TesteCarro {
         System.out.printf("Dados do carro: \n");
         System.out.printf("%s %s %d\n",a.getMarca(),a.getModelo(),a.getAno());
         System.out.printf("Velocidade: %.2f km/h\n", a.getVelocidade());
+
+        a.acelerar();
+        a.imprimirVel();
+        a.desacelerar();
+        a.imprimirVel();
     }
 }

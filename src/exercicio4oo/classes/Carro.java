@@ -5,6 +5,20 @@ public class Carro {
     private int ano;
     private double velocidade;
 
+    public void acelerar(){
+        System.out.println("Acelerando...");
+        this.velocidade+=10;
+    }
+
+    public void desacelerar(){
+        System.out.println("Desacelerando...");
+        this.velocidade-=10;
+    }
+
+    public void imprimirVel(){
+        System.out.println("Velocidade atual: "+velocidade);
+    }
+
     public String getMarca() { return this.marca; }
     public String getModelo() { return this.modelo; }
     public int getAno() { return this.ano; }

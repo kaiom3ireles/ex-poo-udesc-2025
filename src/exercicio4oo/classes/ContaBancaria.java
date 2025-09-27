@@ -9,7 +9,7 @@ public class ContaBancaria {
         this.saldo+=valor;
     }
 
-    public double sacar(double valor){
+    public void sacar(double valor){
         this.saldo-=valor;
     }
 
