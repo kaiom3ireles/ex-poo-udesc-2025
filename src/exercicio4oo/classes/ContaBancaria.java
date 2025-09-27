@@ -5,6 +5,18 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
+    public void depositar(double valor) {
+        this.saldo+=valor;
+    }
+
+    public double sacar(double valor){
+        this.saldo-=valor;
+    }
+
+    public void imprimirSaldo(){
+        System.out.printf("R$ %.2f\n", this.saldo);
+    }
+
     public String getNumeroConta() {
         return numeroConta;
     }

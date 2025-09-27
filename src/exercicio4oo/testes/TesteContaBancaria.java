@@ -15,6 +15,9 @@ public class TesteContaBancaria {
         System.out.printf("Nº conta: %s\n", cbx.getNumeroConta());
         System.out.printf("Saldo: %.2f $$\n", cbx.getSaldo());
 
+        cbx.depositar(500);
+        cbx.imprimirSaldo();
+
         if (cbx.getSaldo()< 0){
             System.out.printf("Pague-me o aluguel %s !\n\n",cbx.getTitular());
         }
