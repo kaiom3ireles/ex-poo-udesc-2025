@@ -11,13 +11,16 @@ public class TesteCarro {
         a.setAno(1993);
         a.setVelocidade(300);
 
-        System.out.printf("Dados do carro: \n");
-        System.out.printf("%s %s %d\n",a.getMarca(),a.getModelo(),a.getAno());
-        System.out.printf("Velocidade: %.2f km/h\n", a.getVelocidade());
-
+        Carro b = new Carro("Volkswagen", "Fusca", 1966, 110.0);
+        System.out.println(a);
         a.acelerar();
         a.imprimirVel();
-        a.desacelerar();
-        a.imprimirVel();
+        System.out.println("\n\n");
+
+        System.out.println(b);
+        b.desacelerar();
+        b.imprimirVel();
+        System.out.println("\n\n");
+
     }
 }
