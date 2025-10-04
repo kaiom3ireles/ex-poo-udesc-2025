@@ -5,6 +5,24 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
+    public ContaBancaria(){
+        this.numeroConta = "";
+        this.titular = "";
+        this.saldo = 0.0;
+    }
+
+    public ContaBancaria(String numeroConta, String titular, double saldo){
+        this.numeroConta = numeroConta;
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+
+    public String toString(){
+        return "Dados da conta"
+                +"\nTitular: '" + this.titular
+                +"\nNumero da conta: '" + this.numeroConta
+                +"\nSaldo: R$" + this.saldo;
+    }
     public void depositar(double valor) {
         this.saldo+=valor;
     }

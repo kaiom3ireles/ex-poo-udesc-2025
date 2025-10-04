@@ -5,6 +5,7 @@ import exercicio5oo.classes.ContaBancaria;
 public class TesteContaBancaria {
     public static void main(String[] args) {
         ContaBancaria cbx = new ContaBancaria();
+        ContaBancaria cby = new ContaBancaria("258739814672", "Fulano Parametrizado", 1000.00);
 
         cbx.setNumeroConta("182546789271");
         cbx.setTitular("Seu Madruga");
@@ -21,5 +22,7 @@ public class TesteContaBancaria {
         if (cbx.getSaldo()< 0){
             System.out.printf("Pague-me o aluguel %s !\n\n",cbx.getTitular());
         }
+
+        System.out.println("-----Parametrizando-----\n\n");
+        System.out.println(cby);
     }
-}
