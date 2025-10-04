@@ -4,6 +4,25 @@ public class Livro {
     private String titulo, autor, genero;
     private boolean emprestado;
 
+    public Livro(){
+        this.titulo = "";
+        this.autor = "";
+        this.genero = "";
+        this.emprestado = false;
+    }
+    public Livro(String titulo, String autor, String genero, boolean emprestado){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.genero = genero;
+        this.emprestado = emprestado;
+    }
+    public String toString(){
+        return "Dados do livro"
+                +"\nTitulo: " + this.titulo
+                +"\nAutor: " + this.autor
+                +"\nGenero: " + this.genero;
+    }
+
     public void emprestarLivro(boolean emprestar){
         if (emprestar == true ){
             this.emprestado = true;
