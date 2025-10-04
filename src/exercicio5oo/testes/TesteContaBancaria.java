@@ -19,10 +19,11 @@ public class TesteContaBancaria {
         cbx.depositar(500);
         cbx.imprimirSaldo();
 
-        if (cbx.getSaldo()< 0){
-            System.out.printf("Pague-me o aluguel %s !\n\n",cbx.getTitular());
+        if (cbx.getSaldo() < 0) {
+            System.out.printf("Pague-me o aluguel %s !\n\n", cbx.getTitular());
         }
 
         System.out.println("-----Parametrizando-----\n\n");
         System.out.println(cby);
     }
+}

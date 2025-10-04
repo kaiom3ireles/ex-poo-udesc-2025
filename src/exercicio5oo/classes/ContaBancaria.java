@@ -19,8 +19,8 @@ public class ContaBancaria {
 
     public String toString(){
         return "Dados da conta"
-                +"\nTitular: '" + this.titular
-                +"\nNumero da conta: '" + this.numeroConta
+                +"\nTitular: " + this.titular
+                +"\nNumero da conta: " + this.numeroConta
                 +"\nSaldo: R$" + this.saldo;
     }
     public void depositar(double valor) {
