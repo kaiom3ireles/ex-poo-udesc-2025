@@ -5,6 +5,7 @@ import exercicio5oo.classes.Retangulo;
 public class TesteRetangulo {
     public static void main(String[] args) {
         Retangulo x = new Retangulo();
+        Retangulo y = new Retangulo(25.2,28.2);
         x.setLargura(10.85);
         x.setAltura(20.40);
 
@@ -13,5 +14,9 @@ public class TesteRetangulo {
         System.out.printf("Altura: %.2f\n", x.getAltura());
 
         System.out.printf("Área de %.2f\n", x.calcularArea());
+
+        System.out.println("-----Parametrizando-----\n");
+
+        System.out.println(y);
     }
 }
