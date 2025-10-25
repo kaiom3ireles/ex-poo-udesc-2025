@@ -26,8 +26,24 @@ public class Retangulo {
         return area;
     }
 
-    public void setLargura(double largura) { this.largura = largura; }
-    public void setAltura(double altura) { this.altura = altura; }
+    public void setLargura(double largura) {
+        if(largura <= 0 || largura >= 1000) {
+            System.out.println("Largura("+largura+") inválida, deve estar entre 0 e 1000");
+            System.exit(0);
+        }
+        else{
+            this.largura = largura;
+        }
+    }
+    public void setAltura(double altura) {
+        if(altura <= 0 || altura >= 1000) {
+            System.out.println("Altura("+altura+") inválida, deve estar entre 0 e 1000");
+            System.exit(0);
+        }
+        else{
+            this.altura = altura;
+        }
+    }
 
     public double getLargura() { return largura; }
     public double getAltura() { return altura; }
