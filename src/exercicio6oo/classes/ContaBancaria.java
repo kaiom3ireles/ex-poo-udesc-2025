@@ -21,14 +21,26 @@ public class ContaBancaria {
         return "Dados da conta"
                 +"\nTitular: " + this.titular
                 +"\nNumero da conta: " + this.numeroConta
-                +"\nSaldo: R$" + this.saldo;
+                +"\nSaldo: R$ " + this.saldo;
     }
     public void depositar(double valor) {
-        this.saldo+=valor;
+        if (valor >= 0) {
+            System.out.println("Depositando...\n");
+            this.saldo += valor;
+        } else {
+            System.out.println("Depósito inválido");
+            System.exit(0);
+        }
     }
 
     public void sacar(double valor){
-        this.saldo-=valor;
+        if (valor >= 0) {
+            System.out.println("Sacando...\n");
+            this.saldo -= valor;
+        } else {
+            System.out.println("Saque inválido");
+            System.exit(0);
+        }
     }
 
     public void imprimirSaldo(){
@@ -56,6 +68,12 @@ public class ContaBancaria {
     }
 
     public void setSaldo(double saldo) {
+        if(saldo>0){
         this.saldo = saldo;
     }
+        else{
+            System.out.println(this.titular+", saldo insuficiente");
+            System.exit(0);
+        }
+}
 }
