@@ -24,23 +24,34 @@ public class Livro {
     }
 
     public void emprestarLivro(boolean emprestar){
-        if (emprestar == true ){
-            this.emprestado = true;
-            System.out.println("Realizando novo empréstimo...");
-            System.out.println("Empréstimo realizado");
+        System.out.println("Emprestar...");
+        if(this.emprestado == false) {
+            if (emprestar == true) {
+                this.emprestado = true;
+                System.out.println("Realizando novo empréstimo...");
+                System.out.println("Empréstimo realizado");
+            } else {
+                this.emprestado = false;
+            }
         }
-        else{
-            this.emprestado = false;
+        else {
+            System.out.println("Livro não está disponível para empréstimo");
+            System.exit(0);
         }
     }
     public void devolverLivro(boolean devolver){
-        if (devolver == true ){
-            this.emprestado = false;
-            System.out.println("Realizando nova devolução...");
-            System.out.println("Devolução realizada");
+        System.out.println("Delvolver...");
+        if(this.emprestado == true) {
+            if (devolver == true) {
+                this.emprestado = false;
+                System.out.println("Realizando nova devolução...");
+                System.out.println("Devolução realizada");
+            } else {
+                this.emprestado = true;
+            }
         }
-        else{
-            this.emprestado = true;
+        else {
+            System.out.println("Não é possível devolver, pois já está na biblioteca");
         }
     }
 
