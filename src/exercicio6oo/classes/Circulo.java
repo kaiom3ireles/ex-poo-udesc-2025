@@ -8,7 +8,7 @@ public class Circulo {
     }
 
     public Circulo(double raio){
-        this.raio= raio;
+        this.raio=raio;
     }
     public double calcularDiametro(){
         double diametro = 2*this.raio;
@@ -36,6 +36,12 @@ public class Circulo {
     }
 
     public void setRaio(double raio) {
-        this.raio = raio;
+        if(raio >=0 && raio<=1000) {
+            this.raio = raio;
+        }
+        else{
+            System.out.println("Raio("+raio+") inválido, deve estar entre 0 e 1000.");
+            System.exit(0);
+        }
     }
 }
