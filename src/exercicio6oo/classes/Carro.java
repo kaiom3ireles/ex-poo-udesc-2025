@@ -8,11 +8,19 @@ public class Carro {
     public void acelerar(){
         System.out.println("Acelerando...");
         this.velocidade+=10;
+        if(this.velocidade>300){
+            System.out.println("Velocidade não pode passar de 300");
+            System.exit(0);
+        }
     }
 
     public void desacelerar(){
         System.out.println("Desacelerando...");
         this.velocidade-=10;
+        if(this.velocidade<0){
+            System.out.println("Velocidade não pode ser negativa");
+            System.exit(0);
+        }
     }
 
     public void imprimirVel(){
@@ -49,7 +57,14 @@ public class Carro {
     public void setMarca(String marca) { this.marca = marca; }
     public void setModelo(String modelo) { this.modelo = modelo; }
     public void setAno(int ano) { this.ano = ano; }
-    public void setVelocidade(double velocidade) { this.velocidade = velocidade; }
-
+    public void setVelocidade(double velocidade) {
+        if (velocidade <= 0 || velocidade >= 300) {
+            System.out.println("Velocidade inválida, deve estar entre 0 e 300");
+            System.exit(0);
+        }
+        else {
+            this.velocidade = velocidade;
+        }
+    }
 
 }

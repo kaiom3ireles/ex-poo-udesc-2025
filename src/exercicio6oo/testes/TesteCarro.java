@@ -9,9 +9,9 @@ public class TesteCarro {
         a.setMarca("Chevrolet");
         a.setModelo("Chevette");
         a.setAno(1993);
-        a.setVelocidade(300);
+        a.setVelocidade(310);
 
-        Carro b = new Carro("Volkswagen", "Fusca", 1966, 110.0);
+        Carro b = new Carro("Volkswagen", "Fusca", 1966, 9);
         System.out.println(a);
         a.acelerar();
         a.imprimirVel();
