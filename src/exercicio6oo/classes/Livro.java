@@ -11,10 +11,10 @@ public class Livro {
         this.emprestado = false;
     }
     public Livro(String titulo, String autor, String genero, boolean emprestado){
-        this.titulo = titulo;
-        this.autor = autor;
-        this.genero = genero;
-        this.emprestado = emprestado;
+        setTitulo(titulo);
+        setAutor(autor);
+        setGenero(genero);
+        setEmprestado(emprestado);
     }
     public String toString(){
         return "Dados do livro"

@@ -10,8 +10,8 @@ public class Retangulo {
     }
 
     public Retangulo(double largura, double altura) {
-        this.largura = largura;
-        this.altura = altura;
+        setLargura(largura);
+        setAltura(altura);
     }
 
     public String toString(){

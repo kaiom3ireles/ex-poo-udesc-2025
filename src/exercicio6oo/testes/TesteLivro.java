@@ -12,10 +12,7 @@ public class TesteLivro {
         livro1.setGenero("Romance");
         //livro1.setEmprestado(true);
 
-        System.out.printf("Dados do livro: \n");
-        System.out.printf("Título: %s\n", livro1.getTitulo());
-        System.out.printf("Autor: %s\n", livro1.getAutor());
-        System.out.printf("Gênero: %s\n", livro1.getGenero());
+        System.out.println(livro1);
 
         livro1.emprestarLivro(false);
         livro1.devolverLivro(false);

@@ -8,7 +8,7 @@ public class Circulo {
     }
 
     public Circulo(double raio){
-        this.raio=raio;
+        setRaio(raio);
     }
     public double calcularDiametro(){
         double diametro = 2*this.raio;

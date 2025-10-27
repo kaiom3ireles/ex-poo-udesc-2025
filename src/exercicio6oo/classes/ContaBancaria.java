@@ -12,9 +12,9 @@ public class ContaBancaria {
     }
 
     public ContaBancaria(String numeroConta, String titular, double saldo){
-        this.numeroConta = numeroConta;
-        this.titular = titular;
-        this.saldo = saldo;
+        setNumeroConta(numeroConta);
+        setTitular(titular);
+        setSaldo(saldo);
     }
 
     public String toString(){

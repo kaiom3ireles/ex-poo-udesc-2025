@@ -35,10 +35,10 @@ public class Carro {
     }
 
     public Carro(String marca, String modelo, int ano, double velocidade){
-        this.marca = marca;
-        this.modelo = modelo;
-        this.ano = ano;
-        this.velocidade = velocidade;
+        setMarca(marca);
+        setModelo(modelo);
+        setAno(ano);
+        setVelocidade(velocidade);
     }
     public String toString(){
         return "Carro"
