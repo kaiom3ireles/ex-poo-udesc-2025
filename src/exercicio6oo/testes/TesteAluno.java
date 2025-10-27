@@ -7,7 +7,7 @@ public class TesteAluno {
 
         Aluno kaio = new Aluno();
         Aluno chaves = new Aluno("888888888", "Chaves",
-                                 8, 1.0, 1.5, 4.2, 5.0);
+                8, 1.0, 1.5, 4.2, 5.0);
         kaio.setMatricula("123456789");
         kaio.setNome("Kaio Meireles");
         kaio.setIdade(21);

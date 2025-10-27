@@ -5,24 +5,25 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
-    public ContaBancaria(){
+    public ContaBancaria() {
         this.numeroConta = "";
         this.titular = "";
         this.saldo = 0.0;
     }
 
-    public ContaBancaria(String numeroConta, String titular, double saldo){
+    public ContaBancaria(String numeroConta, String titular, double saldo) {
         setNumeroConta(numeroConta);
         setTitular(titular);
         setSaldo(saldo);
     }
 
-    public String toString(){
+    public String toString() {
         return "Dados da conta"
-                +"\nTitular: " + this.titular
-                +"\nNumero da conta: " + this.numeroConta
-                +"\nSaldo: R$ " + this.saldo;
+                + "\nTitular: " + this.titular
+                + "\nNumero da conta: " + this.numeroConta
+                + "\nSaldo: R$ " + this.saldo;
     }
+
     public void depositar(double valor) {
         if (valor >= 0) {
             System.out.println("Depositando...\n");
@@ -33,7 +34,7 @@ public class ContaBancaria {
         }
     }
 
-    public void sacar(double valor){
+    public void sacar(double valor) {
         if (valor >= 0) {
             System.out.println("Sacando...\n");
             this.saldo -= valor;
@@ -43,7 +44,7 @@ public class ContaBancaria {
         }
     }
 
-    public void imprimirSaldo(){
+    public void imprimirSaldo() {
         System.out.printf("R$ %.2f\n", this.saldo);
     }
 
@@ -68,12 +69,11 @@ public class ContaBancaria {
     }
 
     public void setSaldo(double saldo) {
-        if(saldo>0){
-        this.saldo = saldo;
-    }
-        else{
-            System.out.println(this.titular+", saldo insuficiente");
+        if (saldo > 0) {
+            this.saldo = saldo;
+        } else {
+            System.out.println(this.titular + ", saldo insuficiente");
             System.exit(0);
         }
-}
+    }
 }

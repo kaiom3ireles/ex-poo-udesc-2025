@@ -14,39 +14,43 @@ public class Retangulo {
         setAltura(altura);
     }
 
-    public String toString(){
+    public String toString() {
         return "Dados do retângulo"
-                +"\nLargura: " + this.largura
-                +"\nAltura: " + this.altura
-                +"\nÁrea: " + this.calcularArea();
+                + "\nLargura: " + this.largura
+                + "\nAltura: " + this.altura
+                + "\nÁrea: " + this.calcularArea();
     }
 
-    public double calcularArea(){
+    public double calcularArea() {
         double area = largura * altura;
         return area;
     }
 
     public void setLargura(double largura) {
-        if(largura <= 0 || largura >= 1000) {
-            System.out.println("Largura("+largura+") inválida, deve estar entre 0 e 1000");
+        if (largura <= 0 || largura >= 1000) {
+            System.out.println("Largura(" + largura + ") inválida, deve estar entre 0 e 1000");
             System.exit(0);
-        }
-        else{
+        } else {
             this.largura = largura;
         }
     }
+
     public void setAltura(double altura) {
-        if(altura <= 0 || altura >= 1000) {
-            System.out.println("Altura("+altura+") inválida, deve estar entre 0 e 1000");
+        if (altura <= 0 || altura >= 1000) {
+            System.out.println("Altura(" + altura + ") inválida, deve estar entre 0 e 1000");
             System.exit(0);
-        }
-        else{
+        } else {
             this.altura = altura;
         }
     }
 
-    public double getLargura() { return largura; }
-    public double getAltura() { return altura; }
+    public double getLargura() {
+        return largura;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
 
 
 }

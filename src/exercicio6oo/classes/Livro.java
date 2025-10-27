@@ -4,28 +4,30 @@ public class Livro {
     private String titulo, autor, genero;
     private boolean emprestado;
 
-    public Livro(){
+    public Livro() {
         this.titulo = "";
         this.autor = "";
         this.genero = "";
         this.emprestado = false;
     }
-    public Livro(String titulo, String autor, String genero, boolean emprestado){
+
+    public Livro(String titulo, String autor, String genero, boolean emprestado) {
         setTitulo(titulo);
         setAutor(autor);
         setGenero(genero);
         setEmprestado(emprestado);
     }
-    public String toString(){
+
+    public String toString() {
         return "Dados do livro"
-                +"\nTitulo: " + this.titulo
-                +"\nAutor: " + this.autor
-                +"\nGenero: " + this.genero;
+                + "\nTitulo: " + this.titulo
+                + "\nAutor: " + this.autor
+                + "\nGenero: " + this.genero;
     }
 
-    public void emprestarLivro(boolean emprestar){
+    public void emprestarLivro(boolean emprestar) {
         System.out.println("Emprestar...");
-        if(this.emprestado == false) {
+        if (this.emprestado == false) {
             if (emprestar == true) {
                 this.emprestado = true;
                 System.out.println("Realizando novo empréstimo...");
@@ -33,15 +35,15 @@ public class Livro {
             } else {
                 this.emprestado = false;
             }
-        }
-        else {
+        } else {
             System.out.println("Livro não está disponível para empréstimo");
             System.exit(0);
         }
     }
-    public void devolverLivro(boolean devolver){
+
+    public void devolverLivro(boolean devolver) {
         System.out.println("Delvolver...");
-        if(this.emprestado == true) {
+        if (this.emprestado == true) {
             if (devolver == true) {
                 this.emprestado = false;
                 System.out.println("Realizando nova devolução...");
@@ -49,21 +51,20 @@ public class Livro {
             } else {
                 this.emprestado = true;
             }
-        }
-        else {
+        } else {
             System.out.println("Não é possível devolver, pois já está na biblioteca");
         }
     }
 
-    public void verificar(){
+    public void verificar() {
         System.out.println("Verificando situação atual\n........................");
-        if (emprestado == true ){
+        if (emprestado == true) {
             System.out.println("Livro indisponível");
-        }
-        else{
+        } else {
             System.out.println("Livro disponível");
         }
     }
+
     public String getTitulo() {
         return titulo;
     }
